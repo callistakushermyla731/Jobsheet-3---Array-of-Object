@@ -35,9 +35,9 @@ public class mataKuliahDemo04 {
         }
 
         System.out.println("\n===== DATA MATA KULIAH =====");
-
-        for(mataKuliah04 mk : arrayOfMataKuliah04) {
-            mk.cetakInfo();
+        for(int i = 0; i < 3; i++) {
+            System.out.println("Data Mata Kuliah Ke-" + (i+1));
+            arrayOfMataKuliah04[i].cetakInfo();
         }
 
         sc.close();
