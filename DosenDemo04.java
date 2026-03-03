@@ -55,6 +55,21 @@ public class DosenDemo04 {
             System.out.println("----------------------------");
         }
 
-        sc.close();
+        DataDosen04 data = new DataDosen04();
+
+        System.out.println("\n===== DATA DOSEN =====");
+        data.dataSemuaDosen(daftarDosen);
+
+        System.out.println("\n===== JUMLAH DOSEN PER JENIS KELAMIN =====");
+        data.jumlahDosenPerJenisKelamin(daftarDosen);
+
+        System.out.println("\n===== RATA-RATA USIA PER JENIS KELAMIN =====");
+        data.rerataUsiaDosenPerJenisKelamin(daftarDosen);
+
+        System.out.println("\n===== DOSEN PALING TUA =====");
+        data.infoDosenPalingTua(daftarDosen);
+
+        System.out.println("\n===== DOSEN PALING MUDA =====");
+        data.infoDosenPalingMuda(daftarDosen);
     }
 }
