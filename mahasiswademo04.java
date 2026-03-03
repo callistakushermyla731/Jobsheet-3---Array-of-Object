@@ -1,13 +1,15 @@
 import java.util.Scanner;
+
 public class mahasiswademo04 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        mahasiswa03[] arrayOfMahasiswa = new mahasiswa03[3];
+        Scanner sc = new Scanner(System.in);
+        mahasiswa04[] arrayOfMahasiswa = new mahasiswa04[3];
         String dummy;
 
+        // INPUT
         for(int i = 0; i < 3; i++){
-            arrayOfMahasiswa[i] = new mahasiswa03();
+            arrayOfMahasiswa[i] = new mahasiswa04();
 
             System.out.println("Masukkan Data Mahasiswa ke-" + (i+1));
             System.out.print("NIM     : ");
@@ -22,13 +24,13 @@ public class mahasiswademo04 {
             System.out.println("------------------------------");
         }
 
+        // OUTPUT pakai method
+        System.out.println("\n===== DATA MAHASISWA =====");
         for(int i = 0; i < 3; i++) {
             System.out.println("Data Mahasiswa ke-" + (i+1));
-            System.out.println("NIM     : " + arrayOfMahasiswa[0].nim);
-            System.out.println("Nama    : " + arrayOfMahasiswa[0].nama);
-            System.out.println("Kelas   : " + arrayOfMahasiswa[0].kelas);
-            System.out.println("IPK     : " + arrayOfMahasiswa[0].ipk);
-            System.out.println("-----------------------------------");
+            arrayOfMahasiswa[i].cetakInfo();
         }
+
+        sc.close();
     }
 }
