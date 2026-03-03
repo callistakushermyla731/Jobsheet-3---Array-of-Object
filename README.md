@@ -8,3 +8,9 @@ Jawaban dari Pertanyaan 3.2.3
 Jawaban dari Pertanyaan 3.3.3
 1. modifikasi
 2. Kode tersebut menyebabkan error karena object pada indeks array belum diinisialisasi.
+
+Jawaban dari Pertanyaan 3.4.3
+1. Iya, suatu class dapat memiliki lebih dari satu constructor. Contoh : public mataKuliah04(String kode, String nama, int sks, int jumlahJam)
+2. Modifikasi
+3. Modifikasi
+4. Modifikasi
